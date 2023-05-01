@@ -13,7 +13,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   border-radius: 10px;
   align-items: center;
   gap: 0.5rem;
@@ -24,7 +24,16 @@ body {
   animation-duration: 1s;
 }
 .add-item {
+  width: 100%;
+  justify-content: center;
   display: flex;
+  position: sticky;
+  top: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ac485a5e;
+  /* box-shadow: 0px 1px 20px #ac485a5e; */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 input {
   color: #432000;
