@@ -1,39 +1,38 @@
-html,
-body {
-  padding: 0;
+* {
   margin: 0;
-  font-family: "Rubik", sans-serif;
-  background-color: #919cb3;
+  padding: 0;
   box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  max-width: 500px;
+  font-family: "Rubik", sans-serif;
+  /* background-color: #919cb3; */
   display: flex;
   place-content: center;
   -webkit-user-select: none;
   user-select: none;
+  justify-content: center;
+  align-self: center;
 }
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
+  max-width: 620px;
   border-radius: 10px;
   align-items: center;
   gap: 0.5rem;
-  padding: 2rem 2rem;
   background-color: #8fb5b9;
-  box-shadow: 0px 0px 20px 2px gray;
   animation-name: example;
   animation-duration: 1s;
-  border: 1px solid;
 }
 .add-item {
-  width: 100%;
-  justify-content: center;
+  max-width: 95%;
   display: flex;
   position: sticky;
   top: 10px;
   padding: 12px 0;
   border-bottom: 1px solid #ac485a5e;
-  /* box-shadow: 0px 1px 20px #ac485a5e; */
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -44,7 +43,7 @@ input {
   text-align: center;
   border: none;
   border-radius: 5px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
 }
 button {
@@ -53,7 +52,7 @@ button {
   text-align: center;
   border: none;
   border-radius: 5px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
   background-color: #ac485a;
   color: #fdfdfd;
@@ -81,12 +80,15 @@ h3 {
 }
 ul {
   list-style: none;
+  max-width: 95%;
   display: flex;
   padding: 0;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 1.2rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 ul li {
   flex-grow: 1;
