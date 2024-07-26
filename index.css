@@ -84,7 +84,7 @@ ul {
   max-width: 95%;
   display: flex;
   margin-top: 16px;
-  padding: 0;
+  padding-bottom: 1.5em;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
