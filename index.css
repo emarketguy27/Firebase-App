@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 620px;
-  border-radius: 10px;
   align-items: center;
   gap: 0.5rem;
   background-color: #8fb5b9;
@@ -33,8 +32,6 @@ body {
   top: 10px;
   padding: 12px 0;
   border-bottom: 1px solid #ac485a5e;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
 }
 input {
   color: #432000;
@@ -78,10 +75,14 @@ h3 {
   color: #ac485a;
   text-transform: uppercase;
 }
+p {
+  margin: 16px 0;
+}
 ul {
   list-style: none;
   max-width: 95%;
   display: flex;
+  margin-top: 16px;
   padding: 0;
   justify-content: center;
   flex-wrap: wrap;
