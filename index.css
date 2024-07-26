@@ -24,6 +24,7 @@ body {
   animation-name: example;
   animation-duration: 1s;
   overflow: hidden;
+  padding-bottom: 1.5em;
 }
 .add-item {
   max-width: 95%;
