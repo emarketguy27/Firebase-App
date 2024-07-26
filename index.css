@@ -7,13 +7,12 @@ body {
   min-height: 100vh;
   max-width: 500px;
   font-family: "Rubik", sans-serif;
-  /* background-color: #919cb3; */
   display: flex;
   place-content: center;
   -webkit-user-select: none;
   user-select: none;
   justify-content: center;
-  align-self: center;
+  overflow: hidden;
 }
 .container {
   display: flex;
@@ -25,6 +24,7 @@ body {
   background-color: #8fb5b9;
   animation-name: example;
   animation-duration: 1s;
+  overflow: hidden;
 }
 .add-item {
   max-width: 95%;
