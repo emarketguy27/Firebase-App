@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
   align-items: center;
   gap: 0.5rem;
   background-color: #8fb5b9;
@@ -43,7 +44,7 @@ body {
 #content form input {
     border: 0;
     outline: 0;
-    width: 40px;
+    width: 60px;
     height: 40px;
     border-radius: 8px;
     font-size: 15px;
