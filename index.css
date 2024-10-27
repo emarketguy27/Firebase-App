@@ -111,16 +111,20 @@ button:hover {
   background-color: #432000;
 }
 img {
-  width: 150px;
+  position: fixed;
+  /* left: 0; */
+  top: 0;
+  width: 90px;
   margin: 0;
   padding: 0;
   filter: drop-shadow(0px 1px 6px black);
   animation-name: example;
   animation-duration: 1s;
+  /* z-index: -1; */
 }
 h3 {
-  margin: 0;
-  margin-top: 0.5rem;
+  margin: .5rem;
+  margin-top: 4rem;
   padding: 0;
   font-size: 1.4rem;
   color: #ac485a;
