@@ -36,17 +36,53 @@
     <div class="container">
       <h3>Lista Della Spesa</h3>
       <img src="./assets/Lovepik_com-400186585-shopping-cart.png" alt="" />
+      <div id="calc">
+        <div id="content">
+          <form>
+            <div id="output">
+              <input type="text" id="res" aria-label="reset" />
+            </div>
+            <div class="btn">
+              <input type="button" value="C" onclick="Clear()" id="clear" />
+              <input type="button" value="←" onclick="Back()" id="backspace" />
+              <input type="button" value="%" onclick="Solve('%')" />
+              <input type="button" value="/" onclick="Solve('/')" />
+              <br />
+              <input type="button" value="7" onclick="Solve('7')" />
+              <input type="button" value="8" onclick="Solve('8')" />
+              <input type="button" value="9" onclick="Solve('9')" />
+              <input type="button" value="x" onclick="Solve('*')" />
+              <br />
+              <input type="button" value="4" onclick="Solve('4')" />
+              <input type="button" value="5" onclick="Solve('5')" />
+              <input type="button" value="6" onclick="Solve('6')" />
+              <input type="button" value="-" onclick="Solve('-')" />
+              <br />
+              <input type="button" value="1" onclick="Solve('1')" />
+              <input type="button" value="2" onclick="Solve('2')" />
+              <input type="button" value="3" onclick="Solve('3')" />
+              <input type="button" value="+" onclick="Solve('+')" />
+              <br />
+              <input type="button" value="00" onclick="Solve('00')" />
+              <input type="button" value="0" onclick="Solve('0')" />
+              <input type="button" value="." onclick="Solve('.')" />
+              <input type="button" value="=" onclick="Result()" />
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="add-item">
         <input type="text" id="input-field" placeholder="Inserire Elementi" />
         <button id="add-button">+</button>
       </div>
+      Fare clic per rimuovere un elemento
 
       <ul id="shopping-list"></ul>
-      Fare clic per rimuovere un elemento
     </div>
 
     <script src="./functions.js" type="module"></script>
     <script src="./index.js" type="module"></script>
-    <script src="./books.js" type="module"></script>
+    <script src="./calc.js"></script>
+    <!-- <script src="./books.js" type="module"></script> -->
   </body>
 </html>
