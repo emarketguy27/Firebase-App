@@ -33,7 +33,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 1px solid;
 }
 #content {
     background: #2c302c;
@@ -48,7 +47,7 @@ body {
     height: 40px;
     border-radius: 8px;
     font-size: 15px;
-    margin: 6px;
+    margin: 3px;
     cursor: pointer;
 }
 #backspace {
