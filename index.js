@@ -53,9 +53,6 @@ addButtonEl.addEventListener("click", () => {
 function clearInputFieldEl() {
   inputEl.value = "";
 }
-// function appendList(itemValue) {
-//   shoppingListEl.innerHTML += `<li>${itemValue}</li>`;
-// }
 function clearListEl() {
   shoppingListEl.innerHTML = "";
 }
@@ -74,3 +71,13 @@ function appendListToItemListEl(item) {
 
   shoppingListEl.append(newEl);
 }
+
+const calcBtn = document.querySelector('#calc-btn');
+calcBtn.addEventListener("click", toggleCalc);
+const calculator = document.querySelector('#calc');
+
+function toggleCalc() {
+  calculator.classList.toggle("visible");
+  calcBtn.classList.toggle("active");
+  calculator.classList.toggle("hidden");
+};

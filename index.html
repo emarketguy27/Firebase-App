@@ -34,9 +34,20 @@
   </head>
   <body>
     <div class="container">
-      <img src="./assets/Lovepik_com-400186585-shopping-cart.png" alt="" />
-      <h3>La nostra Lista Della Spesa</h3>
-      <div id="calc">
+      <div class="header-row">
+        <img
+          src="./assets/Lovepik_com-400186585-shopping-cart.png"
+          alt="site logo"
+        />
+        <h3>La nostra Lista Della Spesa</h3>
+        <img
+          src="./assets/calculator.png"
+          alt="use calculator icon"
+          id="calc-btn"
+        />
+      </div>
+
+      <div id="calc" class="hidden">
         <div id="content">
           <form>
             <div id="output">
@@ -71,11 +82,13 @@
           </form>
         </div>
       </div>
+
       <p>fare clic su un elemento per rimuoverlo</p>
       <div class="add-item">
         <input type="text" id="input-field" placeholder="Inserire Elementi" />
         <button id="add-button">+</button>
       </div>
+
       <ul id="shopping-list"></ul>
     </div>
 
