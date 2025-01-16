@@ -99,7 +99,7 @@ form #output input {
   border-top: 1px solid #ac485a5e;
 }
 .add-item {
-  max-width: 90vw;
+  max-width: 80%;
   display: flex;
   position: sticky;
   top: 1.5rem;
@@ -117,7 +117,7 @@ input {
   font-family: "Rubik", sans-serif;
 }
 button {
-  padding: 1rem 2rem;
+  padding: 0.2rem 1rem;
   text-align: center;
   border: none;
   border-radius: 0 5px 5px 0;
