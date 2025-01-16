@@ -39,11 +39,22 @@ body {
   transition: all 0.5s ease-in-out;
 }
 #calc.visible {
-  height: 310px;
+  height: 440px;
   opacity: 1;
 }
 #calc.hidden {
   height: 0;
+}
+.calc-form {
+  max-width: 100%;
+  max-height: 100%;
+}
+.btn-panel {
+  text-align: center;
+  border: 1px solid #ac485a;
+}
+.calc-btn {
+  width: 100%;
 }
 #content {
   background: #2c302c;
@@ -53,11 +64,11 @@ body {
 #content form input {
   border: 0;
   outline: 0;
-  width: 60px;
-  height: 40px;
+  width: 20%;
+  height: 20%;
   border-radius: 8px;
-  font-size: 15px;
-  margin: 3px;
+  font-size: 0.8rem;
+  margin: 4px;
   cursor: pointer;
 }
 #backspace {
@@ -88,7 +99,7 @@ form #output input {
   border-top: 1px solid #ac485a5e;
 }
 .add-item {
-  max-width: 95%;
+  max-width: 90vw;
   display: flex;
   position: sticky;
   top: 1.5rem;
@@ -145,7 +156,6 @@ img {
   &::before {
     content: "open";
     color: red;
-    font-size: 12px;
   }
 }
 #calc-btn.active {
@@ -160,7 +170,7 @@ img {
 h3 {
   margin: 0.5rem;
   padding: 0;
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 0.3846rem + 2.4615vw, 3rem);
   color: #ac485a;
   text-transform: uppercase;
   text-align: center;
