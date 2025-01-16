@@ -7,6 +7,9 @@ function Result() {
   var num1 = document.getElementById("res").value;
   try {
     var num2 = eval(num1.replace("x", "*"));
+
+    num2 = num2.toFixed(2);
+
     document.getElementById("res").value = num2;
   } catch {
     document.getElementById("res").value = "Error";
