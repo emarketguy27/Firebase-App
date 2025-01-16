@@ -16,7 +16,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   align-items: center;
   gap: 0.5rem;
@@ -24,6 +24,7 @@ body {
   animation-name: example;
   animation-duration: 1s;
   padding-bottom: 1.5em;
+  overflow: hidden;
 }
 
 /*** Calculator Section ***/
@@ -51,7 +52,6 @@ body {
 }
 .btn-panel {
   text-align: center;
-  border: 1px solid #ac485a;
 }
 .calc-btn {
   width: 100%;
@@ -112,7 +112,7 @@ input {
   text-align: center;
   border: none;
   border-radius: 5px 0 0 5px;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.3846rem + 2.4615vw, 3rem);
   line-height: 2rem;
   font-family: "Rubik", sans-serif;
 }
