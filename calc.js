@@ -27,6 +27,12 @@ document.addEventListener("keydown", function (event) {
   const key = event.key;
   const validKeys = "0123456789+-*/.%";
   if (validKeys.includes(key)) {
+    // Prevent multiple decimal points in a number
+    let currentValue = document.getElementById("res").value;
+    if (key === "." && currentValue.includes(".")) {
+      return; // Prevent adding another decimal point
+    }
+
     Solve(key === "*" ? "x" : key);
   } else if (key === "Enter") {
     Result();
