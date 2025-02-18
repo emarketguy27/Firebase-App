@@ -8,9 +8,10 @@ import {
   remove,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
+// import 'dotenv/config.js';
+
 const appSettings = {
-  databaseURL:
-    "https://testground-68a87-default-rtdb.europe-west1.firebasedatabase.app/",
+  databaseURL: "https://testground-68a87-default-rtdb.europe-west1.firebasedatabase.app",
 };
 
 const app = initializeApp(appSettings);
